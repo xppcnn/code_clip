@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      #example {
+        width: 100px;
+        height: 100px;
+        background-color: rebeccapurple;
+      }
+      .demo {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+      .lazyImg {
+        height: 100px;
+        display: block;
+      }
+      #container {
+        height: 250px;
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo"></div>
+    <div id="container">
+      <img
+        src=""
+        data-src="https://th.bing.com/th/id/OIP.quZptRoOs7JvcVmec0L1oAHaHa?pid=ImgDet&rs=1"
+        class="lazyImg"
+      />
+      <img
+        src=""
+        data-src="https://flashlight.nitecore.com/Uploads/attached/image/20181112/20181112103852_37998.jpg"
+        class="lazyImg"
+      />
+      <img
+        src=""
+        data-src="https://th.bing.com/th/id/OIP.quZptRoOs7JvcVmec0L1oAHaHa?pid=ImgDet&rs=1"
+        class="lazyImg"
+      />
+      <img
+        src=""
+        data-src="https://flashlight.nitecore.com/Uploads/attached/image/20181112/20181112103852_37998.jpg"
+        class="lazyImg"
+      />
+    </div>
+    <div class="demo"></div>
+    <script src="./intersectionObServe.js"></script>
+  </body>
+</html>
