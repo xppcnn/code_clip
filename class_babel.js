@@ -19,6 +19,12 @@ function _typeof(obj) {
     _typeof(obj)
   );
 }
+/**
+ * 
+ * @param {*} instance 
+ * @param {*} Constructor 
+ * 判断是不是通过new 来调用的
+ */
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
     throw new TypeError("Cannot call a class as a function");

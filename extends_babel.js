@@ -23,7 +23,7 @@ function _setPrototypeOf(o, p) {
 function _createSuper(Derived) {
   var hasNativeReflectConstruct = _isNativeReflectConstruct();
   return function _createSuperInternal() {
-    var Super = _getPrototypeOf(Derived),
+    var Super = _getPrototypeOf(Derived), //获取derived的__proto__
       result;
     if (hasNativeReflectConstruct) {
       var NewTarget = _getPrototypeOf(this).constructor;
