@@ -56,12 +56,11 @@ function asyncFun(value, delay) {
 
 (async function () {
   const arr = [
-    limit(() => asyncFun("aaa", 2000)),
-    limit(() => asyncFun("bbb", 3000)),
-    limit(() => asyncFun("ccc", 1000)),
+    limit(() => asyncFun("aaa", 5000)),
+    limit(() => asyncFun("bbb", 1000)),
+    limit(() => asyncFun("ccc", 2000)),
     limit(() => asyncFun("ccc", 1000)),
     limit(() => asyncFun("ccc", 1000)),
   ];
 
-  const result = await Promise.all(arr);
 })();

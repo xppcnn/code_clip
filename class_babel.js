@@ -75,3 +75,5 @@ var Person = /*#__PURE__*/ (function () {
   ]);
   return Person;
 })();
+
+new Person()
